@@ -1,11 +1,9 @@
 package com.androiddeveloper.uploadimage;
 
 
-import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -27,7 +25,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class demoActivityUpload extends AppCompatActivity {
+public class ImageUpload extends AppCompatActivity {
     ProgressDialog prgDialog;
       String imgPath, fileName;
 
@@ -38,7 +36,7 @@ public class demoActivityUpload extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demo_upload);
+        setContentView(R.layout.activity_image_upload);
         prgDialog = new ProgressDialog(this);
         // Set Cancelable as False
         prgDialog.setCancelable(false);
